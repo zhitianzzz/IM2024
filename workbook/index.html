@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE EGG MANUAL</title>
+    <link rel="icon" href="images/part1/egg3.png">
+    <link rel="stylesheet" type="text/css" href="workbookStyle.css">
+    <script src="workbookCode.js"></script>
+</head>
+
+<body class="crt" id="indexCrt">
+
+    <!--navigation bar----------------------------------------------------------------------------------------------------->
+    <nav>
+        <div id="alignLeft">
+            <a href="index.html" id="home">THE EGG</a>
+        </div>
+        <div id="alignRight">
+            <a href="index.html" class="menu currentPage">HOME</a>
+            <a href="project2A.html" class="menu">STEP_1</a>
+            <a href="project2B.html" class="menu">STEP_2</a>
+            <a href="project2C.html" class="menu">STEP_3</a>
+        </div>
+        <!--    Below is a menu icon that will be shown when screen size gets smaller-->
+        <div id="menuIcon" onclick="showMenu(); animateMenuIcon();">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <!--    Below is a side menu bar that will be shown when clicked on the menu icon-->
+        <div id="sideMenu">
+            <a href="index.html" class="menu currentPage">HOME</a>
+            <a href="project2A.html" class="menu">STEP_1</a>
+            <a href="project2B.html" class="menu">STEP_2</a>
+            <a href="project2C.html" class="menu">STEP_3</a>
+        </div>
+    </nav>
+
+
+    <br><br><br><br><br><br>
+    <p id="title">WELCOME TO THE EGG MANUAL</p>
+    <p id="subTitle">please enjoy:)</p>
+
+<section>
+    <div id="container1" class="ctrEgg">
+        <button class="landPgBtn" title="STEP 1: PREPARE THE EGG" type="button">
+            <a href="project2A.html">
+                <img class="landPgEgg" src="images/part1/egg1.png" alt="egg1"/>
+            </a>
+        </button>
+    </div>
+
+
+    <div id="container2" class="ctrEgg">
+        <button class="landPgBtn" title="STEP 2: CRACK THE EGG" type="button">
+            <a href="project2B.html">
+                <img class="landPgEgg" src="images/part1/egg2.png" alt="egg2"/>
+            </a>
+        </button>
+    </div>
+
+    <div id="container3" class="ctrEgg">
+        <button class="landPgBtn" title="STEP 2: COOK THE EGG" type="button">
+            <a href="project2C.html">
+                <img class="landPgEgg" src="images/part1/egg3.png" alt="egg3"/>
+            </a>
+        </button>
+    </div>
+</section>
+
+<section>
+    <!--Button: can be clicked to play background music-->
+    <button class="headphone" id="audioText" onclick="playAudio();" type="button">
+        <div class="scrollAudioText">
+            <p class="audioText">
+                CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/
+                CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/
+                CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/
+                CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE
+            </p>
+        </div>
+            <!--Below is the background music:-->
+        <audio id="music">
+            <source src="audio/landPgAudio.mp3" type="audio/mpeg">
+            Sorry, your browser does not support HTML5 audio.
+        </audio>
+    </button>
+<!--        <p class="audioText">-->
+<!--            Hello, ladies and gentlemen and welcome back to The 21st. The show will be dive fork-first-->
+<!--            into the flavours of the past! I'm your host Tina, and today, we're taking a fantastic tour-->
+<!--            through the vibrant and diverse cuisine of the 21st century.-->
+<!--            Let's kicking things off with a classic L'œuf de la Terre or, as we know, The Egg of the Earth.-->
+<!--            It's a rich and juicy vintage style dish cooked with HTML and CSS.-->
+<!--        </p>-->
+</section>
+
+</body>
+
+</html>
