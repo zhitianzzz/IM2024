@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.clearButton{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.496);
+  box-shadow: rgba(255, 255, 255, 0.411) 0 0 12px;
+  color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clearButton:hover{
+  background-color: rgba(0, 0, 0, 0.588);
+  box-shadow: rgba(255, 255, 255, 0.411) 0 0 12px;
+  border: white 1px solid;
+}
+
+.hintButton{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.496);
+  box-shadow: rgba(255, 255, 255, 0.411) 0 0 12px;
+  color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hintButton:hover{
+  background-color: rgba(0, 0, 0, 0.588);
+  box-shadow: rgba(255, 255, 255, 0.411) 0 0 12px;
+  border: white 1px solid;
+}
+
