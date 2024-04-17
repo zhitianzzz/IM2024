@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+#enBtn, #frBtn, #cnBtn, #jpBtn {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.496);
+  color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  text-decoration: underline;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#enBtn {
+  top: 10px;
+  left: 10px;
+  border: white 1px solid;
+}
+
+#frBtn {
+  top: 10px;
+  right: 10px;
+}
+
+#cnBtn {
+  bottom: 10px;
+  left: 10px;
+}
+
+#jpBtn {
+  bottom: 10px;
+  right: 10px;
+}
+
+#enBtn:hover, #frBtn:hover, #cnBtn:hover, #jpBtn:hover {
+  border: white 1px solid;
+}

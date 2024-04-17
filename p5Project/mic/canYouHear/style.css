@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+p{
+  position: absolute;
+  font-size: 4vw;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+  margin: 10vw;
+}
+
+.highlight {
+  text-decoration: underline;
+}
