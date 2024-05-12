@@ -110,7 +110,27 @@ function animateMenuIcon(){
     icon.classList.toggle("animate");
 }
 
+// Animate the text in the name list
+function animateInspList() {
+    const listItems = document.querySelectorAll('#inspList li');
+    let i = 0;
 
+    setInterval(() => {
+        // Remove the animation from the current item
+        if (listItems[i]) {
+            listItems[i].style.animation = '';
+        }
+
+        // Move to the next item
+        i = (i + 1) % listItems.length;
+
+        // Apply the animation to the next item
+        listItems[i].style.animation = 'text-glow 2s infinite';
+    }, 1000);
+}
+
+// Call the function when the document is loaded
+document.addEventListener('DOMContentLoaded', animateInspList);
 
 
 // NOT IN USE //////////////////////////////////////////////////////////////////
