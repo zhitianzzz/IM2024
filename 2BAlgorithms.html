@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SLAVES_OF_ALGORITHMS?</title>
+    <link rel="icon" href="images/part1/egg3.png">
+    <link rel="stylesheet" type="text/css" href="workbookStyle.css">
+    <script src="workbookCode.js"></script>
+    <script src="https://kit.fontawesome.com/aec5d9d00c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Micro+5&family=Noto+Sans+SC:wght@100..900&family=Silkscreen:wght@400;700&family=Yarndings+12&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--custom cursor-->
+<div id="circle" class="circle"></div>
+
+
+<!--navigation bar----------------------------------------------------------------------------------------------------->
+<nav id="theFixedNav" class="crt">
+    <div id="alignLeft">
+        <a href="index.html" id="home">THE EGG</a>
+    </div>
+    <div id="alignRight">
+        <a href="index.html" class="menu">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn crt currentPage">COOKING_STEPS</button>
+            <div class="dropdown-content">
+                <a href="project2AGallery.html" class="theContent">STEP_1</a>
+                <a href="project2BGallery.html" class="currentPage theContent">STEP_2</a>
+                <a href="project2CGallery.html" class="theContent">STEP_3</a>
+            </div>
+        </div>
+        <a href="https://zhitianzzz.github.io/IM2024Research/" class="menu">RESEARCH</a>
+    </div>
+    <!--    Below is a menu icon that will be shown when screen size gets smaller-->
+    <div id="menuIcon" onclick="showMenu(); animateMenuIcon();">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <!--    Below is a side menu bar that will be shown when clicked on the menu icon-->
+    <div id="sideMenu">
+        <a href="index.html" class="menu">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn crt currentPage">COOKING_STEPS</button>
+            <div class="dropdown-content">
+                <a href="project2AGallery.html">STEP_1</a>
+                <a href="project2BGallery.html" class="currentPage">STEP_2</a>
+                <a href="project2CGallery.html">STEP_3</a>
+            </div>
+        </div>
+        <a href="https://zhitianzzz.github.io/IM2024Research/" class="menu">RESEARCH</a>
+    </div>
+</nav>
+
+<!--content------------------------------------------------------------------------------------------------------------>
+
+<div class="wrapper">
+    <div class="pgLayout">
+        <hr>
+        <h1 class="crt">being_the_slaves_of_algorithms?</h1>
+        <p class="description">
+            This is a 12 hour challenge that I lived a day manipulating my life with algorithms.
+            My activities during the day were determined by the dice.
+            Although I was using the dice to make decisions, I was still the one who made the final decision.
+            I was the one who decided to follow the dice's decision plus I would only list potential activities that I was willing to do.
+        </p>
+        <hr>
+        <div class="algContainer">
+            <image src="images/2B/alg1.jpg" class="algImg" alt="algImg"></image>
+            <image src="images/2B/alg2.jpg" class="algImg" alt="algImg"></image>
+            <image src="images/2B/alg3.jpg" class="algImg" alt="algImg"></image>
+            <image src="images/2B/alg4.jpg" class="algImg" alt="algImg"></image>
+            <image src="images/2B/alg5.jpg" class="algImg" alt="algImg"></image>
+            <image src="images/2B/alg6.jpg" class="algImg" alt="algImg"></image>
+            <br>
+        </div>
+        <br>
+    </div>
+</div>
+
+<div class="cornerVideo">
+    <iframe src="https://player.vimeo.com/video/932436346?autoplay=1&loop=1&autopause=0&controls=0&byline=0&title=0&transparent=0"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="placeVideo"></iframe>
+</div>
+
+<!--music-------------------------------------------------------------------------------------------------------------->
+<div>
+    <button id="music" title="MUSIC" onclick="playAudio(); displayText();"
+            onmouseover="changeText();" onmouseout="hideText();">
+        <i class="fa-solid fa-music" id="musicIcon"></i>
+    </button>
+    <!--    <div id ="playText">music paused</div>-->
+    <!--    <div id="pauseText">music played</div>-->
+    <!--    <div id ="newPlayText">to play</div>-->
+    <!--    <div id="newPauseText">to pause</div>-->
+</div>
+
+<audio id="landBGM" loop autoplay>
+    <source src="audio/landBGM.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+
+</html>

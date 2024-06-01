@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>THE EGG MANUAL</title>
+    <link rel="icon" href="images/part1/egg3.png">
+    <link rel="stylesheet" type="text/css" href="workbookStyle.css">
+    <script src="workbookCode.js"></script>
+    <script src="https://kit.fontawesome.com/aec5d9d00c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Micro+5&family=Noto+Sans+SC:wght@100..900&family=Silkscreen:wght@400;700&family=Yarndings+12&display=swap" rel="stylesheet">
+</head>
+
+<body class="crt" id="indexCrt">
+
+<!--custom cursor-->
+<div id="circle" class="circle"></div>
+
+<div>
+    <iframe src="https://player.vimeo.com/video/932435388?autoplay=1&loop=1&autopause=0&controls=0&byline=0&title=0&transparent=0"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="fitWindow"></iframe>
+</div>
+
+    <!--navigation bar----------------------------------------------------------------------------------------------------->
+    <nav id="theNav">
+        <div id="alignLeft">
+            <a href="index.html" id="home">THE EGG</a>
+        </div>
+        <div id="alignRight">
+            <a href="index.html" class="menu currentPage">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn crt">COOKING_STEPS</button>
+                <div class="dropdown-content">
+                    <a href="project2AGallery.html" class="theContent">STEP_1</a>
+                    <a href="project2BGallery.html" class="theContent">STEP_2</a>
+                    <a href="project2CGallery.html" class="theContent">STEP_3</a>
+                </div>
+            </div>
+            <a href="https://zhitianzzz.github.io/IM2024Research/" class="menu">RESEARCH</a>
+<!--            <a href="project2B.html" class="menu">STEP_2</a>-->
+<!--            <a href="project2C.html" class="menu">STEP_3</a>-->
+        </div>
+        <!--    Below is a menu icon that will be shown when screen size gets smaller-->
+        <div id="menuIcon" onclick="showMenu(); animateMenuIcon();">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <!--    Below is a side menu bar that will be shown when clicked on the menu icon-->
+        <div id="sideMenu">
+            <a href="index.html" class="menu currentPage">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn crt">COOKING_STEPS</button>
+                <div class="dropdown-content">
+                    <a href="project2AGallery.html">STEP_1</a>
+                    <a href="project2BGallery.html">STEP_2</a>
+                    <a href="project2CGallery.html">STEP_3</a>
+                </div>
+            </div>
+            <a href="https://zhitianzzz.github.io/IM2024Research/" class="menu">RESEARCH</a>
+            <!--            <a href="project2B.html" class="menu">STEP_2</a>-->
+            <!--            <a href="project2C.html" class="menu">STEP_3</a>-->
+        </div>
+    </nav>
+
+<div>
+<button id="music" title="MUSIC" onclick="playAudio(); displayText();"
+        onmouseover="changeText();" onmouseout="hideText();">
+    <i class="fa-solid fa-music" id="musicIcon"></i>
+</button>
+    <div id ="playText">music paused</div>
+    <div id="pauseText">music played</div>
+    <div id ="newPlayText">to play</div>
+    <div id="newPauseText">to pause</div>
+</div>
+
+<audio id="landBGM" loop autoplay>
+    <source src="audio/landBGM.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="landWelcome">
+    <p class="title">WELCOME TO</p>
+    <p class="title">THE EGG MANUAL</p>
+    <p class="subTitle">please enjoy:)</p>
+</div>
+
+<!--<section>-->
+<!--    <div id="container1" class="ctrEgg">-->
+<!--        <button class="landPgBtn" title="STEP 1: PREPARE THE EGG" type="button">-->
+<!--            <a href="project2A.html">-->
+<!--                <img class="landPgEgg" src="images/part1/egg1.png" alt="egg1"/>-->
+<!--            </a>-->
+<!--        </button>-->
+<!--    </div>-->
+
+
+<!--    <div id="container2" class="ctrEgg">-->
+<!--        <button class="landPgBtn" title="STEP 2: CRACK THE EGG" type="button">-->
+<!--            <a href="project2B.html">-->
+<!--                <img class="landPgEgg" src="images/part1/egg2.png" alt="egg2"/>-->
+<!--            </a>-->
+<!--        </button>-->
+<!--    </div>-->
+
+<!--    <div id="container3" class="ctrEgg">-->
+<!--        <button class="landPgBtn" title="STEP 2: COOK THE EGG" type="button">-->
+<!--            <a href="project2C.html">-->
+<!--                <img class="landPgEgg" src="images/part1/egg3.png" alt="egg3"/>-->
+<!--            </a>-->
+<!--        </button>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--    &lt;!&ndash;Button: can be clicked to play background music&ndash;&gt;-->
+<!--    <button class="headphone" id="audioText" onclick="playAudio();" type="button">-->
+<!--        <div class="scrollAudioText">-->
+<!--            <p class="audioText">-->
+<!--                CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/-->
+<!--                CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/-->
+<!--                CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/-->
+<!--                CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE/CLICK ME TO PLAY/CLICK ME TO PAUSE-->
+<!--            </p>-->
+<!--        </div>-->
+<!--            &lt;!&ndash;Below is the background music:&ndash;&gt;-->
+<!--        <audio id="music">-->
+<!--            <source src="audio/landPgAudio.mp3" type="audio/mpeg">-->
+<!--            Sorry, your browser does not support HTML5 audio.-->
+<!--        </audio>-->
+<!--    </button>-->
+<!--&lt;!&ndash;        <p class="audioText">&ndash;&gt;-->
+<!--&lt;!&ndash;            Hello, ladies and gentlemen and welcome back to The 21st. The show will be dive fork-first&ndash;&gt;-->
+<!--&lt;!&ndash;            into the flavours of the past! I'm your host Tina, and today, we're taking a fantastic tour&ndash;&gt;-->
+<!--&lt;!&ndash;            through the vibrant and diverse cuisine of the 21st century.&ndash;&gt;-->
+<!--&lt;!&ndash;            Let's kicking things off with a classic L'œuf de la Terre or, as we know, The Egg of the Earth.&ndash;&gt;-->
+<!--&lt;!&ndash;            It's a rich and juicy vintage style dish cooked with HTML and CSS.&ndash;&gt;-->
+<!--&lt;!&ndash;        </p>&ndash;&gt;-->
+<!--</section>-->
+
+</body>
+
+</html>
